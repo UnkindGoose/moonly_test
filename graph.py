@@ -18,7 +18,7 @@ class AgentState(TypedDict):
 def get_current_time():
     """Return the current UTC time in ISO‑8601 format.
     Example → {"utc": "2025‑05‑21T06:42:00Z"}"""
-    return datetime
+    return datetime.now()
 
 tools = [get_current_time]
 
